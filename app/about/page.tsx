@@ -24,13 +24,12 @@ export const metadata = {
 };
 
 const timeline = [
-  { year: "2012-2015", role: "Senior Web Developer & Analyst", company: "CakraStudio" },
-  { year: "2015-2020", role: "Frontend Lead", company: "Ciayo" },
-  { year: "2017-2020", role: "Freelance Fullstack Engineer", company: "LifeLearn" },
+  { year: "2024-Present", role: "Founder, Product Builder", company: "KaryaKilat" },
   { year: "2017-Present", role: "Co-founder, CPTO", company: "Syntax Solution" },
-  { year: "2021-2022", role: "Tech Lead (Remote)", company: "R/GA" },
-  { year: "2022", role: "Engineering Manager", company: "Yoona" },
-  { year: "2023", role: "Tech Manager", company: "Komunal" },
+  { year: "2021-2022", role: "Senior Engineer & Tech Lead", company: "R/GA" },
+  { year: "2017-2020", role: "Web Application Consultant", company: "LifeLearn Holdings (Singapore)" },
+  { year: "2015-2020", role: "Co-founder, Frontend Lead", company: "CIAYO Corp" },
+  { year: "2012-2015", role: "Senior Web Developer", company: "CakraStudio" },
 ];
 
 const skills = [
@@ -59,7 +58,7 @@ export default function AboutPage() {
               Ervandra Halim
             </h1>
             <p className="text-xl text-muted-foreground mb-6">
-              Strategic Systems Architect & CPTO at Syntax Solution
+              Strategic Systems Architect & Tech Partner
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4 text-sm text-muted-foreground">
               <span className="flex items-center gap-1">
@@ -82,22 +81,26 @@ export default function AboutPage() {
         <BlurFade delay={0.2}>
           <Card className="mb-12">
             <CardContent className="p-6 md:p-8">
-              <h2 className="text-xl font-semibold mb-4">The Pattern Synthesizer</h2>
+              <h2 className="text-xl font-semibold mb-4">Your Tech Partner, Not Just a Vendor</h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  I'm an engineer at heart and a technology specialist who enjoys delivering 
-                  technology solutions for clients worldwide. I'm passionate about creating 
-                  technology that helps people and businesses thrive in the digital world.
+                  I've spent 13+ years building systems for companies across Indonesia, Singapore, 
+                  USA, and Finland—from R/GA's global clients (Google, MOCA Museum, Reejig) to 
+                  Indonesian startups and SMEs.
                 </p>
                 <p>
-                  Currently, I co-found and manage <strong className="text-foreground">Syntax Solution</strong> as 
-                  VP of Engineering & Product, where I help businesses build systems that actually work
-                  while they focus on what matters.
+                  What I've learned: <span className="text-foreground font-medium">The best technology isn't the most complex.</span> It's 
+                  the system that solves your specific problem and runs reliably without you.
                 </p>
                 <p>
-                  I bring first-principles thinking, disciplined change-control, and a builder's bias 
-                  to ship the smallest shippable that matters. The result: predictable delivery, 
-                  fewer firefighting days, and systems your team can actually maintain.
+                  Currently, I balance multiple strategic engagements: co-founding 
+                  <strong className="text-foreground"> Syntax Solution</strong> (tech consultancy), 
+                  building <strong className="text-foreground">KaryaKilat</strong> (productized microsites), 
+                  and consulting for corporates and startups under NDA.
+                </p>
+                <p>
+                  I bring first-principles thinking, disciplined change-control, and a builder's bias. 
+                  Think of me as your tech partner—someone invested in your outcomes, not just deliverables.
                 </p>
               </div>
             </CardContent>
@@ -178,13 +181,23 @@ export default function AboutPage() {
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Button asChild>
-                <Link href="/contact">
+                <a
+                  href="https://calendly.com/ervandra"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Book a Strategy Call
                   <ArrowRight className="w-4 h-4 ml-2" />
-                </Link>
+                </a>
               </Button>
               <Button variant="outline" asChild>
-                <Link href="/cases">View Case Studies</Link>
+                <a
+                  href="https://linkedin.com/in/ervandra"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Connect on LinkedIn
+                </a>
               </Button>
             </div>
           </div>

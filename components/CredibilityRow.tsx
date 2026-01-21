@@ -7,9 +7,12 @@ import { NumberTicker } from "@/components/ui/number-ticker";
 const companies = [
   { name: "R/GA", period: "2021-2022" },
   { name: "LifeLearn", period: "2017-2020" },
-  { name: "Yoona", period: "2022" },
   { name: "Komunal", period: "2023" },
   { name: "Syntax Solution", period: "2017-Present" },
+  { name: "MTF", period: "2023-Present" },
+  { name: "CIAYO", period: "2015-2020" },
+  { name: "DDTC", period: "" },
+  { name: "Paper.id", period: "" },
 ];
 
 const stats = [

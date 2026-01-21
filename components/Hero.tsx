@@ -1,19 +1,19 @@
 "use client";
 
 import Link from "next/link";
-import { BOOK_INTRO_URL, WHATSAPP_URL } from "@/lib/links";
+import { BOOK_INTRO_URL, WHATSAPP_URL, KARYAKILAT_URL } from "@/lib/links";
 import { track } from "@/lib/analytics";
 import { BlurFade } from "@/components/ui/blur-fade";
 import { Button } from "@/components/ui/button";
 import { MagicCard } from "@/components/ui/magic-card";
 import { FlickeringGrid } from "@/components/ui/flickering-grid";
-import { Calendar, MessageCircle, Layers, Cpu, Code2, Shield } from "lucide-react";
+import { Calendar, MessageCircle, Layers, Cpu, Code2, Users, ArrowRight } from "lucide-react";
 
 const capabilities = [
   { icon: Layers, title: "Strategic Systems Design", desc: "Map your ops, design the architecture" },
-  { icon: Cpu, title: "AI Enablement", desc: "Practical AI, not hype" },
+  { icon: Cpu, title: "AI Enablement", desc: "AI that works while you sleep" },
   { icon: Code2, title: "Custom Development", desc: "Web apps, tools, dashboards" },
-  { icon: Shield, title: "Change-Control Discipline", desc: "Ship reliably, every time" },
+  { icon: Users, title: "Fractional CPTO", desc: "Your tech partner on speed dial" },
 ];
 
 export default function Hero() {
@@ -38,7 +38,7 @@ export default function Hero() {
           <BlurFade delay={0.1}>
             <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 text-sm border border-border rounded-full bg-background/80 backdrop-blur">
               <span className="w-2 h-2 bg-foreground rounded-full animate-pulse" />
-              Strategic Systems Architect
+              Strategic Systems Architect & Tech Partner
             </div>
           </BlurFade>
 
@@ -52,9 +52,16 @@ export default function Hero() {
 
           {/* Subheadline */}
           <BlurFade delay={0.3}>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-              Strategic tech architecture for insurance agents, property agents, 
-              business owners, and entrepreneurs who want to scale operations without chaos.
+            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-4">
+              Strategic tech architecture for corporates, startups, and business owners
+              who want to scale operations without chaos.
+            </p>
+          </BlurFade>
+
+          {/* Tech Partner Differentiator */}
+          <BlurFade delay={0.35}>
+            <p className="text-sm text-muted-foreground/80 max-w-xl mx-auto mb-8 italic">
+              Think of me as your tech partner—not a vendor who disappears after delivery.
             </p>
           </BlurFade>
 
@@ -81,19 +88,15 @@ export default function Hero() {
                   </Link>
                 </Button>
               )}
-              {hasWA && (
-                <Button variant="outline" size="lg" className="gap-2" asChild>
-                  <a
-                    href={WHATSAPP_URL!}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    onClick={() => track("cta_click", { cta: "whatsapp", location: "hero" })}
-                  >
-                    <MessageCircle className="w-4 h-4" />
-                    Send a Message
-                  </a>
-                </Button>
-              )}
+              <Button variant="outline" size="lg" className="gap-2" asChild>
+                <Link 
+                  href="/services"
+                  onClick={() => track("cta_click", { cta: "explore_services", location: "hero" })}
+                >
+                  Explore Services
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
+              </Button>
             </div>
           </BlurFade>
 

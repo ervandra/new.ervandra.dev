@@ -30,13 +30,14 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.ervandra.dev'),
   title: {
-    default: 'Ervandra Halim — Strategic Systems Architect',
+    default: 'Ervandra Halim — Strategic Systems Architect & Tech Partner',
     template: '%s · Ervandra Halim',
   },
   description:
-    'I build systems that make your business run without you. Strategic tech architecture for agents, entrepreneurs, and business owners who want to scale without chaos.',
+    'I build systems that make your business run without you. Strategic tech partner for corporates, startups, and business owners who want to scale operations without chaos.',
   keywords: [
     'strategic systems architect',
+    'tech partner',
     'tech consultant',
     'CPTO',
     'fractional CTO',
@@ -45,6 +46,7 @@ export const metadata: Metadata = {
     'web application',
     'software architecture',
     'business automation',
+    'KaryaKilat',
     'Ervandra Halim',
   ],
   authors: [{ name: 'Ervandra Halim', url: 'https://www.ervandra.dev' }],
@@ -62,9 +64,9 @@ export const metadata: Metadata = {
     icon: '/icon.svg',
   },
   openGraph: {
-    title: 'Ervandra Halim — Strategic Systems Architect',
+    title: 'Ervandra Halim — Strategic Systems Architect & Tech Partner',
     description:
-      'I build systems that make your business run without you. Strategic tech architecture for agents, entrepreneurs, and business owners who want to scale without chaos.',
+      'I build systems that make your business run without you. Strategic tech partner for corporates, startups, and business owners who want to scale operations without chaos.',
     url: 'https://www.ervandra.dev',
     siteName: 'Ervandra Halim',
     images: [
@@ -72,7 +74,7 @@ export const metadata: Metadata = {
         url: '/og.svg',
         width: 1200,
         height: 630,
-        alt: 'Ervandra Halim - Strategic Systems Architect',
+        alt: 'Ervandra Halim - Strategic Systems Architect & Tech Partner',
       },
     ],
     locale: 'en_US',
@@ -80,9 +82,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Ervandra Halim — Strategic Systems Architect',
+    title: 'Ervandra Halim — Strategic Systems Architect & Tech Partner',
     description:
-      'I build systems that make your business run without you. Strategic tech architecture for agents, entrepreneurs, and business owners who want to scale without chaos.',
+      'I build systems that make your business run without you. Strategic tech partner for corporates, startups, and business owners who want to scale operations without chaos.',
     images: ['/og.svg'],
     creator: '@ervandra',
   },
