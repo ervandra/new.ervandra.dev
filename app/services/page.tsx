@@ -215,7 +215,7 @@ export default function ServicesPage() {
                           <ExternalLink className="w-4 h-4" />
                         </a>
                       ) : (
-                        <Link href={solution.href}>
+                        <Link href={solution.href as any}>
                           {solution.cta}
                           <ArrowRight className="w-4 h-4" />
                         </Link>
